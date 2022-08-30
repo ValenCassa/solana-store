@@ -1,0 +1,37 @@
+.walletContainer {
+  width: 100%;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  top: 0;
+
+  .wallet {
+    background: #2f2f2f;
+    border: 1px solid #3d3d3d;
+    box-shadow: -47px -61px 31px rgba(0, 0, 0, 0.01),
+      -26px -34px 26px rgba(0, 0, 0, 0.03), -12px -15px 19px rgba(0, 0, 0, 0.04),
+      -3px -4px 11px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    padding: 0.5em 5em;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #2c2c2c;
+    }
+  }
+
+  .select {
+    all: unset;
+    display: flex;
+    align-items: center;
+    color: #cccccc;
+    font-family: "Inter";
+    font-size: 15px;
+  }
+
+  .select:hover {
+    background-color: transparent;
+  }
+}
